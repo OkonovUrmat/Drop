@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3129984CD8D98AEA9BB097BD /* Pods_Drop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE626E6338670987FE2E32 /* Pods_Drop.framework */; };
 		37B293B025BBDA4B00ACCE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293AF25BBDA4B00ACCE50 /* AppDelegate.swift */; };
 		37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293B125BBDA4B00ACCE50 /* SceneDelegate.swift */; };
-		37B293B425BBDA4B00ACCE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293B325BBDA4B00ACCE50 /* ViewController.swift */; };
 		37B293B725BBDA4B00ACCE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B293B525BBDA4B00ACCE50 /* Main.storyboard */; };
 		37B293BA25BBDA4B00ACCE50 /* Drop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37B293B825BBDA4B00ACCE50 /* Drop.xcdatamodeld */; };
 		37B293BC25BBDA4C00ACCE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B293BB25BBDA4C00ACCE50 /* Assets.xcassets */; };
 		37B293BF25BBDA4C00ACCE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B293BD25BBDA4C00ACCE50 /* LaunchScreen.storyboard */; };
 		37B293CA25BBDA4C00ACCE50 /* DropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293C925BBDA4C00ACCE50 /* DropTests.swift */; };
 		37B293D525BBDA4C00ACCE50 /* DropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293D425BBDA4C00ACCE50 /* DropUITests.swift */; };
+		37B92CA425BD6CE30077886E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CA325BD6CE30077886E /* Constants.swift */; };
+		37B92CAC25BD6CEE0077886E /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CAB25BD6CEE0077886E /* AuthServices.swift */; };
+		37B92CBA25BD6F100077886E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CB925BD6F100077886E /* TabViewController.swift */; };
 		8A2AF16E2EED5104587696E1 /* Pods_DropTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E735CB691C2842E12F62B18 /* Pods_DropTests.framework */; };
 		AE7B06B3D908ECEE2D69957E /* Pods_Drop_DropUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA1C96B8E4AC2C57ECCD791 /* Pods_Drop_DropUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +46,6 @@
 		37B293AC25BBDA4B00ACCE50 /* Drop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B293AF25BBDA4B00ACCE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B293B125BBDA4B00ACCE50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37B293B325BBDA4B00ACCE50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37B293B625BBDA4B00ACCE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B293B925BBDA4B00ACCE50 /* Drop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drop.xcdatamodel; sourceTree = "<group>"; };
 		37B293BB25BBDA4C00ACCE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		37B293D025BBDA4C00ACCE50 /* DropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B293D425BBDA4C00ACCE50 /* DropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropUITests.swift; sourceTree = "<group>"; };
 		37B293D625BBDA4C00ACCE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B92CA325BD6CE30077886E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37B92CAB25BD6CEE0077886E /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		37B92CB925BD6F100077886E /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		67837B99B9DD12E76758B77F /* Pods-DropTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropTests.release.xcconfig"; path = "Target Support Files/Pods-DropTests/Pods-DropTests.release.xcconfig"; sourceTree = "<group>"; };
 		824C67B7BECA1BED10EF46F2 /* Pods-Drop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drop.release.xcconfig"; path = "Target Support Files/Pods-Drop/Pods-Drop.release.xcconfig"; sourceTree = "<group>"; };
 		8E735CB691C2842E12F62B18 /* Pods_DropTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +122,13 @@
 		37B293AE25BBDA4B00ACCE50 /* Drop */ = {
 			isa = PBXGroup;
 			children = (
+				37B92CB025BD6D030077886E /* Model */,
+				37B92CB125BD6D0C0077886E /* View */,
+				37B92CB225BD6D120077886E /* Controller */,
+				37B92CA225BD6CD30077886E /* Utilities */,
+				37B92CA125BD6CC70077886E /* Services */,
 				37B293AF25BBDA4B00ACCE50 /* AppDelegate.swift */,
 				37B293B125BBDA4B00ACCE50 /* SceneDelegate.swift */,
-				37B293B325BBDA4B00ACCE50 /* ViewController.swift */,
 				37B293B525BBDA4B00ACCE50 /* Main.storyboard */,
 				37B293BB25BBDA4C00ACCE50 /* Assets.xcassets */,
 				37B293BD25BBDA4C00ACCE50 /* LaunchScreen.storyboard */,
@@ -148,6 +156,44 @@
 			path = DropUITests;
 			sourceTree = "<group>";
 		};
+		37B92CA125BD6CC70077886E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				37B92CAB25BD6CEE0077886E /* AuthServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37B92CA225BD6CD30077886E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				37B92CA325BD6CE30077886E /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		37B92CB025BD6D030077886E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37B92CB125BD6D0C0077886E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37B92CB225BD6D120077886E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37B92CB925BD6F100077886E /* TabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		90274F8A31C4874D3B6073F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +204,6 @@
 				A67D7E28B95139ACD07D88FE /* Pods-DropTests.debug.xcconfig */,
 				67837B99B9DD12E76758B77F /* Pods-DropTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -410,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B293B425BBDA4B00ACCE50 /* ViewController.swift in Sources */,
+				37B92CBA25BD6F100077886E /* TabViewController.swift in Sources */,
+				37B92CA425BD6CE30077886E /* Constants.swift in Sources */,
 				37B293B025BBDA4B00ACCE50 /* AppDelegate.swift in Sources */,
+				37B92CAC25BD6CEE0077886E /* AuthServices.swift in Sources */,
 				37B293BA25BBDA4B00ACCE50 /* Drop.xcdatamodeld in Sources */,
 				37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */,
 			);
