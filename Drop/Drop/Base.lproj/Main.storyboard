@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="sZe-YC-2Qj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1Tu-EV-yO8"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="Plus" id="1Tu-EV-yO8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwU-LM-Rx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="EyE-20-kYq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="0zy-c9-pSS"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="Menu" id="0zy-c9-pSS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsi-Rz-Ef9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,7 +216,7 @@
                             <constraint firstItem="xiY-Jk-EHG" firstAttribute="trailing" secondItem="cZE-VY-Tns" secondAttribute="trailing" constant="17" id="zaM-pv-xyc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7oi-HL-abx"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="Navigation" id="7oi-HL-abx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JD-f1-VIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,6 +245,9 @@
     <resources>
         <image name="Button Filter" width="54" height="54"/>
         <image name="Ellipse" width="12" height="12"/>
+        <image name="Menu" width="24" height="24"/>
+        <image name="Navigation" width="16" height="21"/>
+        <image name="Plus" width="24" height="24"/>
         <image name="Stick" width="4" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
