@@ -6,8 +6,10 @@ target 'Drop' do
   use_frameworks!
 
   # Pods for Drop
-
 pod 'Google/Analytics'
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
   target 'DropTests' do
     inherit! :search_paths
