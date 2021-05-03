@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  UserRegisterViewController.swift
 //  Drop
 //
 //  Created by Urmat on 2/7/21.

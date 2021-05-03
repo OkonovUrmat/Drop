@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRegisterViewController" customModule="Drop" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleAspectFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="vTu-Fr-uSC">
+                    <rect key="frame" x="15" y="50" width="345" height="430"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-p0-Rmj">
+                            <rect key="frame" x="17" y="76" width="311" height="266"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByX-Y8-OgD">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-eb-mOR">
+                                    <rect key="frame" x="0.0" y="58" width="311" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xD2-7U-N5q">
+                                    <rect key="frame" x="0.0" y="116" width="311" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-D5-GIE">
+                                    <rect key="frame" x="0.0" y="174" width="311" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Повторить пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcj-sb-5up">
+                                    <rect key="frame" x="0.0" y="232" width="311" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMQ-iU-vqe">
+                            <rect key="frame" x="16" y="32" width="284" height="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFi-0O-d2B" customClass="RoundedButton" customModule="Drop" customModuleProvider="target">
+                            <rect key="frame" x="17" y="378" width="311" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="ЗАРЕГИСТРИРОВАТЬСЯ">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="mFi-0O-d2B" firstAttribute="top" secondItem="UiC-p0-Rmj" secondAttribute="bottom" constant="36" id="3db-Aq-zPG"/>
+                        <constraint firstAttribute="trailing" secondItem="XMQ-iU-vqe" secondAttribute="trailing" constant="45" id="BRi-rb-fEy"/>
+                        <constraint firstAttribute="trailing" secondItem="UiC-p0-Rmj" secondAttribute="trailing" constant="17" id="IQS-2F-ihx"/>
+                        <constraint firstItem="XMQ-iU-vqe" firstAttribute="leading" secondItem="vTu-Fr-uSC" secondAttribute="leading" constant="16" id="euq-KP-5hm"/>
+                        <constraint firstItem="UiC-p0-Rmj" firstAttribute="top" secondItem="XMQ-iU-vqe" secondAttribute="bottom" constant="15" id="lmx-eb-N9X"/>
+                        <constraint firstItem="mFi-0O-d2B" firstAttribute="leading" secondItem="vTu-Fr-uSC" secondAttribute="leading" constant="17" id="sJB-iZ-wjE"/>
+                        <constraint firstItem="UiC-p0-Rmj" firstAttribute="leading" secondItem="vTu-Fr-uSC" secondAttribute="leading" constant="17" id="vCF-8S-4Ud"/>
+                        <constraint firstAttribute="trailing" secondItem="mFi-0O-d2B" secondAttribute="trailing" constant="17" id="w5D-TM-szB"/>
+                        <constraint firstItem="XMQ-iU-vqe" firstAttribute="top" secondItem="vTu-Fr-uSC" secondAttribute="top" constant="32" id="wtQ-Ef-eVF"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь, вы принимаете условия соглашения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfE-3j-xbR">
+                    <rect key="frame" x="20" y="488" width="335" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-BC-mfG" customClass="UnderlinedLabel" customModule="Drop" customModuleProvider="target">
+                    <rect key="frame" x="103" y="582" width="169" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Уже есть аккаунт? Войти">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rsy-BC-mfG" secondAttribute="trailing" constant="103" id="Ddh-37-hHJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TfE-3j-xbR" secondAttribute="trailing" constant="20" id="NSq-HZ-IBh"/>
+                <constraint firstItem="TfE-3j-xbR" firstAttribute="top" secondItem="vTu-Fr-uSC" secondAttribute="bottom" constant="8" id="O49-pW-0wv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rsy-BC-mfG" secondAttribute="bottom" constant="57" id="Pkx-4i-DT0"/>
+                <constraint firstItem="TfE-3j-xbR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RBW-wH-XhY"/>
+                <constraint firstItem="vTu-Fr-uSC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="SA7-yF-ZOu"/>
+                <constraint firstItem="Rsy-BC-mfG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="103" id="bK0-jE-3bp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vTu-Fr-uSC" secondAttribute="trailing" constant="15" id="bRd-IG-cef"/>
+                <constraint firstItem="Rsy-BC-mfG" firstAttribute="top" secondItem="TfE-3j-xbR" secondAttribute="bottom" constant="78" id="exD-Mf-rNw"/>
+                <constraint firstItem="vTu-Fr-uSC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="iZS-WN-zH4"/>
+            </constraints>
+            <point key="canvasLocation" x="-152.80000000000001" y="114.69265367316342"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="mFi-0O-d2B">
+            <size key="intrinsicContentSize" width="176" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
