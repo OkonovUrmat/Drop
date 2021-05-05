@@ -19,6 +19,8 @@
 		37604A6225E1721D00DF5C56 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37604A6125E1721D00DF5C56 /* AppAssets.xcassets */; };
 		37604A6B25E1765F00DF5C56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37604A6925E1765F00DF5C56 /* LoginViewController.swift */; };
 		37604A6C25E1765F00DF5C56 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37604A6A25E1765F00DF5C56 /* LoginViewController.xib */; };
+		379D27A82642F003008AB32D /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D27A62642F003008AB32D /* OrderDetailViewController.swift */; };
+		379D27A92642F003008AB32D /* OrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379D27A72642F003008AB32D /* OrderDetailViewController.xib */; };
 		37B293B025BBDA4B00ACCE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293AF25BBDA4B00ACCE50 /* AppDelegate.swift */; };
 		37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B293B125BBDA4B00ACCE50 /* SceneDelegate.swift */; };
 		37B293B725BBDA4B00ACCE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B293B525BBDA4B00ACCE50 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		37604A6125E1721D00DF5C56 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
 		37604A6925E1765F00DF5C56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37604A6A25E1765F00DF5C56 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		379D27A62642F003008AB32D /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		379D27A72642F003008AB32D /* OrderDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailViewController.xib; sourceTree = "<group>"; };
 		37B293AC25BBDA4B00ACCE50 /* Drop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B293AF25BBDA4B00ACCE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B293B125BBDA4B00ACCE50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			children = (
 				375683BF25CFFFB700698E81 /* UserRegisterViewController.xib */,
 				37604A6A25E1765F00DF5C56 /* LoginViewController.xib */,
+				379D27A72642F003008AB32D /* OrderDetailViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				375683BE25CFFFB700698E81 /* UserRegisterViewController.swift */,
 				37604A6925E1765F00DF5C56 /* LoginViewController.swift */,
 				3730BE3A264020A0003753C7 /* BaseViewController.swift */,
+				379D27A62642F003008AB32D /* OrderDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B293BF25BBDA4C00ACCE50 /* LaunchScreen.storyboard in Resources */,
+				379D27A92642F003008AB32D /* OrderDetailViewController.xib in Resources */,
 				37604A6225E1721D00DF5C56 /* AppAssets.xcassets in Resources */,
 				37604A6C25E1765F00DF5C56 /* LoginViewController.xib in Resources */,
 				37B293BC25BBDA4C00ACCE50 /* Assets.xcassets in Resources */,
@@ -502,6 +509,7 @@
 				37604A6B25E1765F00DF5C56 /* LoginViewController.swift in Sources */,
 				37B92CBA25BD6F100077886E /* TabViewController.swift in Sources */,
 				375683D425D0005300698E81 /* RoundedButton.swift in Sources */,
+				379D27A82642F003008AB32D /* OrderDetailViewController.swift in Sources */,
 				37B92CA425BD6CE30077886E /* Constants.swift in Sources */,
 				375683C025CFFFB700698E81 /* UserRegisterViewController.swift in Sources */,
 				3730BE3B264020A1003753C7 /* BaseViewController.swift in Sources */,
