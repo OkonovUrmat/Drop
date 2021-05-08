@@ -13,7 +13,6 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var passwordTxtField: UITextField!
     @IBOutlet weak var forgetPasswordBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
-    @IBOutlet weak var backBtn: UIBarButtonItem!
     
     // START: Variables for underline text
     var attrs = [
