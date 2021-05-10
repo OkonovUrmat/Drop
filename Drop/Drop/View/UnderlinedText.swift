@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UnderlinedLabel: UIButton {
+class UnderlinedLabel: UILabel {
 
 override var text: String? {
     didSet {
