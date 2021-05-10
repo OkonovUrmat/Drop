@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRegisterViewController" customModule="Drop" customModuleProvider="target">
             <connections>
+                <outlet property="agreementBtn" destination="TfE-3j-xbR" id="PVL-me-ENR"/>
+                <outlet property="logInBtn" destination="Rsy-BC-mfG" id="ssi-eO-oqB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -78,13 +80,13 @@
                         <constraint firstItem="XMQ-iU-vqe" firstAttribute="top" secondItem="vTu-Fr-uSC" secondAttribute="top" constant="32" id="wtQ-Ef-eVF"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь, вы принимаете условия соглашения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfE-3j-xbR">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь, вы принимаете условия соглашения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfE-3j-xbR" customClass="UnderlinedLabel" customModule="Drop" customModuleProvider="target">
                     <rect key="frame" x="20" y="488" width="335" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-BC-mfG" customClass="UnderlinedLabel" customModule="Drop" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-BC-mfG">
                     <rect key="frame" x="103" y="582" width="169" height="28"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Уже есть аккаунт? Войти">
