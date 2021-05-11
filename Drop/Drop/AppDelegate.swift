@@ -11,8 +11,18 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if #available(iOS 13.0, *) {
+            //Opt-out of DarkMode
+            window?.overrideUserInterfaceStyle = .light
+        }
+        
         return true
     }
 
