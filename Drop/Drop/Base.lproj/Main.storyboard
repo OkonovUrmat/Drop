@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="28V-4x-pbf">
             <objects>
                 <viewController id="Jxw-5l-FOK" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="sZe-YC-2Qj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="Plus" id="1Tu-EV-yO8">
+                    <tabBarItem key="tabBarItem" title="" image="Plus" selectedImage="Plus" id="1Tu-EV-yO8">
                         <inset key="imageInsets" minX="0.0" minY="-50" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="476" y="205"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="7cD-1d-NxH">
             <objects>
                 <viewController id="yp4-h3-dud" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         <viewLayoutGuide key="safeArea" id="EyE-20-kYq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="Profile" id="0zy-c9-pSS"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile" id="0zy-c9-pSS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsi-Rz-Ef9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="844"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="0n1-C3-gRG">
             <objects>
                 <viewController id="2W0-FN-wzn" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                                         <rect key="frame" x="0.0" y="76" width="375" height="448"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="BqY-Rr-dA0">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="BqY-Rr-dA0" customClass="OrderTableViewCell" customModule="Drop" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BqY-Rr-dA0" id="vsZ-Mb-BIL">
@@ -155,14 +155,14 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Откуда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEg-Qn-4f7">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Примечание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEg-Qn-4f7">
                                                                     <rect key="frame" x="16" y="114" width="111" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бишкек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOe-xe-wNG">
-                                                                    <rect key="frame" x="16" y="142.5" width="60.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honda Odyssey, 3 места" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOe-xe-wNG">
+                                                                    <rect key="frame" x="16" y="142.5" width="191" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -196,7 +196,7 @@
                                                                 <constraint firstItem="ZOe-xe-wNG" firstAttribute="leading" secondItem="G9o-2x-BEE" secondAttribute="leading" constant="16" id="owi-De-GIx"/>
                                                                 <constraint firstItem="oEg-Qn-4f7" firstAttribute="leading" secondItem="G9o-2x-BEE" secondAttribute="leading" constant="16" id="sLi-sf-Kef"/>
                                                                 <constraint firstItem="pvC-5e-S7G" firstAttribute="leading" secondItem="coh-L4-FOA" secondAttribute="trailing" constant="96" id="sz0-aM-fAQ"/>
-                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZOe-xe-wNG" secondAttribute="trailing" symbolic="YES" id="t99-nw-uH9"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZOe-xe-wNG" secondAttribute="trailing" constant="20" symbolic="YES" id="t99-nw-uH9"/>
                                                                 <constraint firstItem="ZOe-xe-wNG" firstAttribute="leading" secondItem="oEg-Qn-4f7" secondAttribute="leading" id="t9s-fd-iHD"/>
                                                                 <constraint firstItem="04C-zu-QxC" firstAttribute="top" secondItem="coh-L4-FOA" secondAttribute="bottom" constant="29" id="znn-Km-Rlt"/>
                                                             </constraints>
@@ -222,6 +222,15 @@
                                                         <constraint firstItem="G9o-2x-BEE" firstAttribute="top" secondItem="vek-q0-1Hb" secondAttribute="bottom" constant="8" symbolic="YES" id="vxk-5e-jTc"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="costLbl" destination="ZaM-fJ-kme" id="SZo-a4-wch"/>
+                                                    <outlet property="dateLbl" destination="naR-pu-1JQ" id="buI-zq-LuK"/>
+                                                    <outlet property="destinationPointLbl" destination="Ol7-61-dmz" id="ndA-ys-6ZP"/>
+                                                    <outlet property="detailsLbl" destination="ZOe-xe-wNG" id="Z8r-Kg-heh"/>
+                                                    <outlet property="initialPointLbl" destination="coh-L4-FOA" id="2mx-OI-oI8"/>
+                                                    <outlet property="nameLbl" destination="9Yb-8M-9vu" id="cec-FS-FZS"/>
+                                                    <outlet property="orderImg" destination="vek-q0-1Hb" id="whH-ur-2Zd"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -254,7 +263,7 @@
                             <constraint firstItem="osY-AL-PlD" firstAttribute="trailing" secondItem="xiY-Jk-EHG" secondAttribute="trailing" id="rhh-Hm-1cM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="Compass" id="7oi-HL-abx"/>
+                    <tabBarItem key="tabBarItem" title="" image="Compass" selectedImage="Compass" id="7oi-HL-abx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JD-f1-VIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,7 +273,7 @@
         <scene sceneID="dLv-fS-tg9">
             <objects>
                 <tabBarController id="nhq-Yr-MBs" customClass="TabViewController" customModule="Drop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="TabBar Background" id="dJ5-ZV-yHo">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJ5-ZV-yHo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,7 +296,6 @@
         <image name="PassengerActive" width="192" height="76"/>
         <image name="Plus" width="64" height="64"/>
         <image name="Profile" width="30" height="32"/>
-        <image name="TabBar Background" width="390.5" height="87.5"/>
         <image name="Vertical Line" width="1.5" height="39"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
