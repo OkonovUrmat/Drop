@@ -7,23 +7,41 @@
 
 import UIKit
 
-class OrderViewController: UIViewController {
+class OrderViewController: UIViewController  {
 
+    @IBOutlet weak var passengerBtn: UIButton!
+    @IBOutlet weak var driverBtn: UIButton!
+    @IBOutlet weak var orderTableViiew: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initOrderTableView()
+    }
+
+    func initOrderTableView() {
+        self.orderTableViiew.delegate = self
+        self.orderTableViiew.dataSource = self
+        self.orderTableViiew.register(UINib(nibName: "OrderTableViewCell", bundle: nil), forCellReuseIdentifier: "orderTableViewCell")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func passengerBtnClicked(_ sender: Any) {
+        
     }
-    */
+    
+    @IBAction func driverBtnClicked(_ sender: Any) {
+        
+    }
+}
 
+extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
 }

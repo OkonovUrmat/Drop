@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="844"/>
         </scene>
-        <!--View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="0n1-C3-gRG">
             <objects>
-                <viewController id="2W0-FN-wzn" sceneMemberID="viewController">
+                <viewController id="2W0-FN-wzn" customClass="OrderViewController" customModule="Drop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jUn-E4-ikP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,19 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAw-Os-Gv7">
                                                 <rect key="frame" x="0.0" y="0.0" width="279" height="76"/>
                                                 <state key="normal" backgroundImage="PassengerActive"/>
+                                                <connections>
+                                                    <action selector="passengerBtn:" destination="Zvr-C2-swB" eventType="touchUpInside" id="PeQ-rG-NGh"/>
+                                                    <action selector="passengerBtnClicked:" destination="Zvr-C2-swB" eventType="touchUpInside" id="FHD-KV-hcQ"/>
+                                                    <action selector="passengerBtnClicked:" destination="2W0-FN-wzn" eventType="touchUpInside" id="s2z-eW-fqz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFh-3q-n14">
                                                 <rect key="frame" x="279" y="0.0" width="96" height="76"/>
                                                 <state key="normal" backgroundImage="DriverInActive"/>
+                                                <connections>
+                                                    <action selector="driverBtnClicked:" destination="2W0-FN-wzn" eventType="touchUpInside" id="MoO-sw-cVw"/>
+                                                    <action selector="driverBtnClicked:" destination="Zvr-C2-swB" eventType="touchUpInside" id="Yzj-Mf-3sD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -264,8 +273,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Compass" selectedImage="Compass" id="7oi-HL-abx"/>
+                    <connections>
+                        <outlet property="driverBtn" destination="qFh-3q-n14" id="jMc-8H-HJZ"/>
+                        <outlet property="orderTableViiew" destination="iyD-e6-yiD" id="FyG-Ek-uGQ"/>
+                        <outlet property="passengerBtn" destination="ZAw-Os-Gv7" id="hYC-K8-Ivc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JD-f1-VIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Zvr-C2-swB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="476" y="-402.54872563718146"/>
         </scene>

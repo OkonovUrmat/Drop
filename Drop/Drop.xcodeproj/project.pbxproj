@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3129984CD8D98AEA9BB097BD /* Pods_Drop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE626E6338670987FE2E32 /* Pods_Drop.framework */; };
 		371CF57E264A9D010048A470 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CF57D264A9D010048A470 /* OrderTableViewCell.swift */; };
+		371CF586264A9FAA0048A470 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CF585264A9FAA0048A470 /* OrderViewController.swift */; };
 		3730BE3B264020A1003753C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3730BE3A264020A0003753C7 /* BaseViewController.swift */; };
 		373B708A263AED8F009A1DAE /* UnderlinedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B7089263AED8F009A1DAE /* UnderlinedText.swift */; };
 		375683C025CFFFB700698E81 /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375683BE25CFFFB700698E81 /* UserRegisterViewController.swift */; };
@@ -60,6 +61,7 @@
 		1BA1C96B8E4AC2C57ECCD791 /* Pods_Drop_DropUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drop_DropUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE626E6338670987FE2E32 /* Pods_Drop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371CF57D264A9D010048A470 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		371CF585264A9FAA0048A470 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		3730BE3A264020A0003753C7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		373B7089263AED8F009A1DAE /* UnderlinedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedText.swift; sourceTree = "<group>"; };
 		375683BE25CFFFB700698E81 /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				37604A6925E1765F00DF5C56 /* LoginViewController.swift */,
 				3730BE3A264020A0003753C7 /* BaseViewController.swift */,
 				379D27A62642F003008AB32D /* OrderDetailViewController.swift */,
+				371CF585264A9FAA0048A470 /* OrderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */,
 				373B708A263AED8F009A1DAE /* UnderlinedText.swift in Sources */,
 				375683C725D0002B00698E81 /* Login.swift in Sources */,
+				371CF586264A9FAA0048A470 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
