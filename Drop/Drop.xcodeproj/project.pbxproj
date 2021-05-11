@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3129984CD8D98AEA9BB097BD /* Pods_Drop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE626E6338670987FE2E32 /* Pods_Drop.framework */; };
+		371CF57E264A9D010048A470 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CF57D264A9D010048A470 /* OrderTableViewCell.swift */; };
 		3730BE3B264020A1003753C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3730BE3A264020A0003753C7 /* BaseViewController.swift */; };
 		373B708A263AED8F009A1DAE /* UnderlinedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B7089263AED8F009A1DAE /* UnderlinedText.swift */; };
 		375683C025CFFFB700698E81 /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375683BE25CFFFB700698E81 /* UserRegisterViewController.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		1BA1C96B8E4AC2C57ECCD791 /* Pods_Drop_DropUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drop_DropUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE626E6338670987FE2E32 /* Pods_Drop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		371CF57D264A9D010048A470 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		3730BE3A264020A0003753C7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		373B7089263AED8F009A1DAE /* UnderlinedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedText.swift; sourceTree = "<group>"; };
 		375683BE25CFFFB700698E81 /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371CF57B264A9CC60048A470 /* OrderDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				378A75A326494F7900EA56AB /* OrderDetailTableViewCell.swift */,
+				378A75A426494F7900EA56AB /* OrderDetailTableViewCell.xib */,
+			);
+			path = OrderDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		371CF57C264A9CD50048A470 /* OrderTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				371CF57D264A9D010048A470 /* OrderTableViewCell.swift */,
+			);
+			path = OrderTableViewCell;
+			sourceTree = "<group>";
+		};
 		375683C525CFFFC700698E81 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +160,8 @@
 		378A75A226494F3600EA56AB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				378A75A326494F7900EA56AB /* OrderDetailTableViewCell.swift */,
-				378A75A426494F7900EA56AB /* OrderDetailTableViewCell.xib */,
+				371CF57C264A9CD50048A470 /* OrderTableViewCell */,
+				371CF57B264A9CC60048A470 /* OrderDetailTableViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -524,6 +543,7 @@
 				37604A6B25E1765F00DF5C56 /* LoginViewController.swift in Sources */,
 				37B92CBA25BD6F100077886E /* TabViewController.swift in Sources */,
 				375683D425D0005300698E81 /* RoundedButton.swift in Sources */,
+				371CF57E264A9D010048A470 /* OrderTableViewCell.swift in Sources */,
 				379D27A82642F003008AB32D /* OrderDetailViewController.swift in Sources */,
 				37B92CA425BD6CE30077886E /* Constants.swift in Sources */,
 				375683C025CFFFB700698E81 /* UserRegisterViewController.swift in Sources */,
