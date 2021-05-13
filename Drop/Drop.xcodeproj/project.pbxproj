@@ -21,6 +21,8 @@
 		37604A6225E1721D00DF5C56 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37604A6125E1721D00DF5C56 /* AppAssets.xcassets */; };
 		37604A6B25E1765F00DF5C56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37604A6925E1765F00DF5C56 /* LoginViewController.swift */; };
 		37604A6C25E1765F00DF5C56 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37604A6A25E1765F00DF5C56 /* LoginViewController.xib */; };
+		377D9953264D69DC00F18C7B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D9952264D69DC00F18C7B /* Navigation.swift */; };
+		377D9958264D6B2C00F18C7B /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D9957264D6B2C00F18C7B /* Screen.swift */; };
 		378A75A526494F7900EA56AB /* OrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A75A326494F7900EA56AB /* OrderDetailTableViewCell.swift */; };
 		378A75A626494F7900EA56AB /* OrderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378A75A426494F7900EA56AB /* OrderDetailTableViewCell.xib */; };
 		379D27A82642F003008AB32D /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D27A62642F003008AB32D /* OrderDetailViewController.swift */; };
@@ -73,6 +75,8 @@
 		37604A6125E1721D00DF5C56 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
 		37604A6925E1765F00DF5C56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37604A6A25E1765F00DF5C56 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		377D9952264D69DC00F18C7B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		377D9957264D6B2C00F18C7B /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		378A75A326494F7900EA56AB /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		378A75A426494F7900EA56AB /* OrderDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailTableViewCell.xib; sourceTree = "<group>"; };
 		379D27A62642F003008AB32D /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				37B92CA325BD6CE30077886E /* Constants.swift */,
+				377D9952264D69DC00F18C7B /* Navigation.swift */,
+				377D9957264D6B2C00F18C7B /* Screen.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -552,11 +558,13 @@
 				375683C025CFFFB700698E81 /* UserRegisterViewController.swift in Sources */,
 				3730BE3B264020A1003753C7 /* BaseViewController.swift in Sources */,
 				375683D925D0014400698E81 /* RoundendTextField.swift in Sources */,
+				377D9953264D69DC00F18C7B /* Navigation.swift in Sources */,
 				375683CF25D0003300698E81 /* Register.swift in Sources */,
 				37B293B025BBDA4B00ACCE50 /* AppDelegate.swift in Sources */,
 				37B92CAC25BD6CEE0077886E /* AuthServices.swift in Sources */,
 				378A75A526494F7900EA56AB /* OrderDetailTableViewCell.swift in Sources */,
 				37B293BA25BBDA4B00ACCE50 /* Drop.xcdatamodeld in Sources */,
+				377D9958264D6B2C00F18C7B /* Screen.swift in Sources */,
 				37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */,
 				373B708A263AED8F009A1DAE /* UnderlinedText.swift in Sources */,
 				375683C725D0002B00698E81 /* Login.swift in Sources */,
