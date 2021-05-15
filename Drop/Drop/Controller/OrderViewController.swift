@@ -22,7 +22,6 @@ class OrderViewController: UIViewController  {
     func initOrderTableView() {
         self.orderTableViiew.delegate = self
         self.orderTableViiew.dataSource = self
-        self.orderTableViiew.register(UINib(nibName: "OrderTableViewCell", bundle: nil), forCellReuseIdentifier: "orderTableViewCell")
     }
     
     @IBAction func passengerBtnClicked(_ sender: Any) {
@@ -36,16 +35,21 @@ class OrderViewController: UIViewController  {
 
 extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Navigation.start(OrderDetailViewController.create())
+        let vc = OrderDetailViewController(nibName: "OrderDetailViewController", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        if let orderCell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell") as? OrderTableViewCell {
+            orderCell.setOrderInfo(orderImg: "Profile", nameLbl: "Smth", costLbl: "Smth", dateLbl: "Smth", initialPointLbl: "Smth", destinationPointLbl: "Smth", detailsLbl: "Smth")
+            
+            return orderCell
+        } else {
+            return UITableViewCell()
+        }
     }
-    
-    
 }
