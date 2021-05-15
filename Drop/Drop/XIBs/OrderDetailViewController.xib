@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailViewController" customModule="Drop" customModuleProvider="target">
             <connections>
+                <outlet property="orderDetailTableView" destination="2Xw-po-Asf" id="llX-JT-zug"/>
+                <outlet property="orderImg" destination="ATW-Ew-Jct" id="tFT-3N-Gmq"/>
+                <outlet property="orderNameLbl" destination="wTS-g0-bsc" id="ZID-lN-ezc"/>
+                <outlet property="priceLbl" destination="gRm-ZF-e4i" id="jNb-SJ-bsO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,6 +50,9 @@
                             <state key="normal" title="Связаться">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="connectWithOrderClicked:" destination="-1" eventType="touchUpInside" id="295-Rv-nv3"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование заказа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTS-g0-bsc">
                             <rect key="frame" x="68" y="16" width="177" height="20.5"/>
