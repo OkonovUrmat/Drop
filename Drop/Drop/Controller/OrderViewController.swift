@@ -39,8 +39,9 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = OrderDetailViewController(nibName: "OrderDetailViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        let orderDetailViewController = OrderDetailViewController(nibName: "OrderDetailViewController", bundle: nil)
+        orderDetailViewController.setOrderDetailInfo(orderDetailImg: "Profile", nameLbl: "Smth", costLbl: "Smth", timeLbl: "Smth", dateLbl: "Smth", initialPointLbl: "Smth", destinationPointLbl: "Smth", carLbl: "Smth", detailsLbl: "Smth")
+        self.present(orderDetailViewController, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
