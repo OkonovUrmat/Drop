@@ -26,6 +26,18 @@ class OrderDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setOrderDetailOutlets()
+        
+        initOrderDetailTableView()
+    }
+
+    func initOrderDetailTableView() {
+        self.orderDetailTableView.delegate = self
+        self.orderDetailTableView.dataSource = self
+        self.orderDetailTableView.register(UINib(nibName: "OrderDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderDetailTableViewCell")
+    }
+    
+    func setOrderDetailOutlets() {
         self.orderImg.image = UIImage(named: orderDetailImage)
         self.orderNameLbl.text = name
         self.costLbl.text = cost
@@ -39,4 +51,22 @@ class OrderDetailViewController: BaseViewController {
     
     @IBAction func connectWithOrderClicked(_ sender: Any) {
     }
+}
+
+extension OrderDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let orderDetailCell = tableView.dequeueReusableCell(withIdentifier: "OrderDetailTableViewCell") as? OrderDetailTableViewCell {
+            orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Profile", body: "Smth")
+            
+            return orderDetailCell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    
 }

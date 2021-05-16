@@ -24,4 +24,9 @@ class OrderDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setOrderDetailInfo(title: String, orderImage: String, body: String) {
+        self.titleName.text = title
+        self.orderImg.image = UIImage(named: orderImage)
+        self.bodyTxt.text = body
+    }
 }
