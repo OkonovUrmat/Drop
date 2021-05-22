@@ -7,12 +7,25 @@
 
 import UIKit
 
-class OrderViewController: UIViewController  {
+class OrderViewController: BaseViewController  {
 
+    // Main Outlets
     @IBOutlet weak var passengerBtn: UIButton!
     @IBOutlet weak var driverBtn: UIButton!
     @IBOutlet weak var orderTableViiew: UITableView!
+    @IBOutlet weak var searchView: UIView!
     
+    // Search View Outlets
+    @IBOutlet weak var initialPointTxtField: DesignableUITextField!
+    @IBOutlet weak var destinationPointTxtField: DesignableUITextField!
+    @IBOutlet weak var timeTxtField: DesignableUITextField!
+    @IBOutlet weak var dateTxtField: DesignableUITextField!
+    @IBOutlet weak var startPayroll: DesignableUITextField!
+    @IBOutlet weak var endPayroll: DesignableUITextField!
+    
+    // Constraint
+    @IBOutlet weak var searchViewTopConstraint: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +37,25 @@ class OrderViewController: UIViewController  {
         self.orderTableViiew.dataSource = self
     }
     
+    // Main Actions
     @IBAction func searchBtnClicked(_ sender: Any) {
+        self.searchViewTopConstraint.constant = -540
+        
+        UIView.animate(withDuration: 0.3, animations:  {
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch: UITouch? = touches.first
+        
+        if touch?.view != searchView {
+            self.searchViewTopConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations:  {
+                self.view.layoutIfNeeded()
+            })
+        }
     }
     
     @IBAction func passengerBtnClicked(_ sender: Any) {
@@ -32,6 +63,19 @@ class OrderViewController: UIViewController  {
     }
     
     @IBAction func driverBtnClicked(_ sender: Any) {
+        
+    }
+    
+    // Search View Actions
+    @IBAction func detailSearchBtnClicked(_ sender: Any) {
+        
+    }
+    
+    @IBAction func clearBtnClicked(_ sender: Any) {
+        
+    }
+    
+    @IBAction func sliderDidSlide(_ sender: Any) {
         
     }
 }
