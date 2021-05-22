@@ -38,6 +38,8 @@
 		37B92CA425BD6CE30077886E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CA325BD6CE30077886E /* Constants.swift */; };
 		37B92CAC25BD6CEE0077886E /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CAB25BD6CEE0077886E /* AuthServices.swift */; };
 		37B92CBA25BD6F100077886E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B92CB925BD6F100077886E /* TabViewController.swift */; };
+		37F3C8B32658FA5700F1EE7F /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C8B22658FA5700F1EE7F /* DesignableUITextField.swift */; };
+		37F3C8B826592CB200F1EE7F /* DesignableUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C8B726592CB200F1EE7F /* DesignableUISlider.swift */; };
 		8A2AF16E2EED5104587696E1 /* Pods_DropTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E735CB691C2842E12F62B18 /* Pods_DropTests.framework */; };
 		AE7B06B3D908ECEE2D69957E /* Pods_Drop_DropUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA1C96B8E4AC2C57ECCD791 /* Pods_Drop_DropUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +100,8 @@
 		37B92CA325BD6CE30077886E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37B92CAB25BD6CEE0077886E /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		37B92CB925BD6F100077886E /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		37F3C8B22658FA5700F1EE7F /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		37F3C8B726592CB200F1EE7F /* DesignableUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUISlider.swift; sourceTree = "<group>"; };
 		67837B99B9DD12E76758B77F /* Pods-DropTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropTests.release.xcconfig"; path = "Target Support Files/Pods-DropTests/Pods-DropTests.release.xcconfig"; sourceTree = "<group>"; };
 		824C67B7BECA1BED10EF46F2 /* Pods-Drop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drop.release.xcconfig"; path = "Target Support Files/Pods-Drop/Pods-Drop.release.xcconfig"; sourceTree = "<group>"; };
 		8E735CB691C2842E12F62B18 /* Pods_DropTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +270,8 @@
 				375683D325D0005300698E81 /* RoundedButton.swift */,
 				375683D825D0014400698E81 /* RoundendTextField.swift */,
 				373B7089263AED8F009A1DAE /* UnderlinedText.swift */,
+				37F3C8B22658FA5700F1EE7F /* DesignableUITextField.swift */,
+				37F3C8B726592CB200F1EE7F /* DesignableUISlider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -559,6 +565,7 @@
 				3730BE3B264020A1003753C7 /* BaseViewController.swift in Sources */,
 				375683D925D0014400698E81 /* RoundendTextField.swift in Sources */,
 				377D9953264D69DC00F18C7B /* Navigation.swift in Sources */,
+				37F3C8B826592CB200F1EE7F /* DesignableUISlider.swift in Sources */,
 				375683CF25D0003300698E81 /* Register.swift in Sources */,
 				37B293B025BBDA4B00ACCE50 /* AppDelegate.swift in Sources */,
 				37B92CAC25BD6CEE0077886E /* AuthServices.swift in Sources */,
@@ -567,6 +574,7 @@
 				377D9958264D6B2C00F18C7B /* Screen.swift in Sources */,
 				37B293B225BBDA4B00ACCE50 /* SceneDelegate.swift in Sources */,
 				373B708A263AED8F009A1DAE /* UnderlinedText.swift in Sources */,
+				37F3C8B32658FA5700F1EE7F /* DesignableUITextField.swift in Sources */,
 				375683C725D0002B00698E81 /* Login.swift in Sources */,
 				371CF586264A9FAA0048A470 /* OrderViewController.swift in Sources */,
 			);
