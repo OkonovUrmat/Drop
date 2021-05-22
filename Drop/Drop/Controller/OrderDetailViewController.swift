@@ -35,6 +35,8 @@ class OrderDetailViewController: BaseViewController {
         self.orderDetailTableView.delegate = self
         self.orderDetailTableView.dataSource = self
         self.orderDetailTableView.register(UINib(nibName: "OrderDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderDetailTableViewCell")
+        self.orderDetailTableView.estimatedRowHeight = 50.0  //Give an approximation here
+        self.orderDetailTableView.rowHeight = UITableView.automaticDimension
     }
     
     func setOrderDetailOutlets() {
@@ -54,19 +56,36 @@ class OrderDetailViewController: BaseViewController {
 }
 
 extension OrderDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let orderDetailCell = tableView.dequeueReusableCell(withIdentifier: "OrderDetailTableViewCell") as? OrderDetailTableViewCell {
-            orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Profile", body: "Smth")
+            
+            switch indexPath.row {
+            case 2: orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Clock", body: "Smth")
+            case 3: orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Calendar", body: "Smth")
+            case 4: orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Car", body: "Smth")
+            case 5: orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "", body: "Есть 3 свободных мест, есть место для багажа, уточнить у водителя Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ")
+                
+            default:
+                orderDetailCell.setOrderDetailInfo(title: "SMTH", orderImage: "Destination", body: "Smth")
+            }
+            
+            
             
             return orderDetailCell
         } else {
             return UITableViewCell()
         }
     }
-    
-    
 }
