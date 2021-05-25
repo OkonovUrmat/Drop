@@ -229,7 +229,7 @@
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKJ-Va-aWf" userLabel="Search View">
-                                        <rect key="frame" x="0.0" y="546" width="375" height="500"/>
+                                        <rect key="frame" x="0.0" y="546" width="375" height="540"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Бишкек" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="922-PO-Xb5" customClass="DesignableUITextField" customModule="Drop" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="36" width="311" height="48"/>
@@ -309,7 +309,7 @@
                                                     <constraint firstAttribute="height" constant="2" id="uhY-qn-2Ke"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-t3-xJA" customClass="DesignableUITextField" customModule="Drop" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-t3-xJA">
                                                 <rect key="frame" x="32" y="268" width="145.5" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="I22-jI-bOg"/>
@@ -324,7 +324,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2000" borderStyle="roundedRect" placeholder="Время" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qr3-Y8-qmR" customClass="DesignableUITextField" customModule="Drop" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2000" borderStyle="roundedRect" placeholder="Время" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qr3-Y8-qmR">
                                                 <rect key="frame" x="197.5" y="267" width="145.5" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Dtb-DN-LVK"/>
@@ -407,7 +407,7 @@
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eqD-bq-Tco" secondAttribute="trailing" constant="32" id="QUu-R4-CYU"/>
                                             <constraint firstAttribute="trailing" secondItem="v8v-oU-gZj" secondAttribute="trailing" constant="32" id="QzA-sA-4g3"/>
                                             <constraint firstItem="taT-V4-333" firstAttribute="top" secondItem="gKJ-Va-aWf" secondAttribute="top" constant="4" id="T8Q-wy-Hko"/>
-                                            <constraint firstAttribute="height" constant="500" id="TRc-2j-iwn"/>
+                                            <constraint firstAttribute="height" constant="540" id="TRc-2j-iwn"/>
                                             <constraint firstItem="Ov1-qw-L5f" firstAttribute="leading" secondItem="Xm1-t3-xJA" secondAttribute="trailing" constant="7" id="Tbk-6j-g4v"/>
                                             <constraint firstItem="922-PO-Xb5" firstAttribute="top" secondItem="gKJ-Va-aWf" secondAttribute="top" constant="36" id="UV7-zH-1o5"/>
                                             <constraint firstItem="nxG-6Z-AvN" firstAttribute="top" secondItem="v8v-oU-gZj" secondAttribute="bottom" constant="16" id="VVW-Qj-pGw"/>
@@ -526,22 +526,16 @@
     </scenes>
     <designables>
         <designable name="922-PO-Xb5">
-            <size key="intrinsicContentSize" width="79" height="34"/>
-        </designable>
-        <designable name="Qr3-Y8-qmR">
-            <size key="intrinsicContentSize" width="71.5" height="34"/>
+            <size key="intrinsicContentSize" width="103" height="34"/>
         </designable>
         <designable name="UNE-JV-mbZ">
-            <size key="intrinsicContentSize" width="71.5" height="34"/>
-        </designable>
-        <designable name="Xm1-t3-xJA">
-            <size key="intrinsicContentSize" width="54" height="34"/>
+            <size key="intrinsicContentSize" width="91.5" height="34"/>
         </designable>
         <designable name="aJ6-Ug-Xwu">
-            <size key="intrinsicContentSize" width="60.5" height="34"/>
+            <size key="intrinsicContentSize" width="80.5" height="34"/>
         </designable>
         <designable name="eqD-bq-Tco">
-            <size key="intrinsicContentSize" width="60" height="34"/>
+            <size key="intrinsicContentSize" width="84" height="34"/>
         </designable>
         <designable name="hVj-Kr-3jN">
             <size key="intrinsicContentSize" width="45" height="30"/>
