@@ -26,10 +26,13 @@ class OrderViewController: BaseViewController  {
     // Constraint
     @IBOutlet weak var searchViewTopConstraint: NSLayoutConstraint!
 
+    let datePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initOrderTableView()
+        initDateTxtField()
     }
 
     func initOrderTableView() {
@@ -37,13 +40,13 @@ class OrderViewController: BaseViewController  {
         self.orderTableViiew.dataSource = self
     }
     
-    // Main Actions
-    @IBAction func searchBtnClicked(_ sender: Any) {
-        self.searchViewTopConstraint.constant = -540
-        
-        UIView.animate(withDuration: 0.3, animations:  {
-            self.view.layoutIfNeeded()
-        })
+    func initDateTxtField() {
+        self.dateTxtField.inputView = datePicker
+        datePicker.datePickerMode = .date
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        }
+        datePicker.addTarget(self, action: #selector(onDatePickerValueChanged(_:)), for: .valueChanged)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -56,6 +59,15 @@ class OrderViewController: BaseViewController  {
                 self.view.layoutIfNeeded()
             })
         }
+    }
+    
+    // Main Actions
+    @IBAction func searchBtnClicked(_ sender: Any) {
+        self.searchViewTopConstraint.constant = -540
+        
+        UIView.animate(withDuration: 0.3, animations:  {
+            self.view.layoutIfNeeded()
+        })
     }
     
     @IBAction func passengerBtnClicked(_ sender: Any) {
@@ -77,6 +89,17 @@ class OrderViewController: BaseViewController  {
     
     @IBAction func sliderDidSlide(_ sender: Any) {
         
+    }
+}
+
+@objc extension OrderViewController {
+    func onDatePickerValueChanged(_ sender: UIDatePicker) {
+        var dateString = ""
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = "YYYY/MM/dd"
+        dateString = dateFormatter.string(from: sender.date) as String
+        self.dateTxtField.text = dateString
     }
 }
 
