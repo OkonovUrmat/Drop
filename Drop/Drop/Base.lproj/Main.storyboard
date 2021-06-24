@@ -59,10 +59,16 @@
                                     <constraint firstAttribute="width" constant="50" id="YDF-XM-QW7"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-rh-Fu7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-rh-Fu7" customClass="DesignableUITextField" customModule="Drop" customModuleProvider="target">
                                 <rect key="frame" x="16" y="111" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="arrow.right" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="-7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EyE-20-kYq"/>
@@ -588,6 +594,9 @@
         <designable name="hVj-Kr-3jN">
             <size key="intrinsicContentSize" width="45" height="30"/>
         </designable>
+        <designable name="l5b-rh-Fu7">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
     </designables>
     <resources>
         <image name="Calendar" width="20" height="20"/>
@@ -603,6 +612,7 @@
         <image name="Profile" width="30" height="32"/>
         <image name="Search" width="24" height="24"/>
         <image name="Vertical Line" width="1.5" height="39"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
